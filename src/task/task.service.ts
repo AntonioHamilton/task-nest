@@ -48,7 +48,7 @@ export class TaskService {
       title,
       description,
       responsible,
-      date: Date.parse(date),
+      date,
       status: TaskStatus.ABERTO,
     });
     return await Task.save();
